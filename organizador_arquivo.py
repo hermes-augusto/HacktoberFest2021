@@ -1,7 +1,7 @@
 '''
-    Exemple of how it works
-    in this file only to explain with tests
-    To see all look file app.py
+    
+Exemplo de como funciona neste arquivo apenas para explicar 
+com os testes Para ver tudo, procure o arquivo
 '''
 import os, shutil, re, mimetypes, time, datetime
 
@@ -10,7 +10,7 @@ dirName = 'temp/'
 dirNameTree = 'temp2/x/p/t/o'
 
 
-#create a dir unique
+#crie um dir único
 if not os.path.exists(dirName):
     os.makedir(dirName)
     print("Directory " , dirName ,  " Created ")
