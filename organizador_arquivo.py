@@ -33,6 +33,8 @@ else:
 dir_test = 'D:\HermesAugusto\Documents\files'
 
 #get date of create and date of modification using getmtime
+
+
 #Format the date of file to yyyy-mm
 time.strftime("%Y-%m",time.strptime(time.ctime(os.path.getmtime("new 3.txt"))))
 #Frist get time of file in seconds is return a float
