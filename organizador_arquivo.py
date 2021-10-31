@@ -18,7 +18,7 @@ else:
     print("Directory " , dirName ,  " already exists")
 
 
-#create a tree of dirs
+#crie uma árvore de dirs
 if not os.path.exists(dirNameTree):
     os.makedirs(dirNameTree)
     print("Directory " , dirNameTree ,  " Created ")
@@ -26,10 +26,11 @@ else:
     print("Directory " , dirNameTree ,  " already exists")
 
 
-#Find all type of files in dir name past and show all the files
+#Encontre todos os tipos de arquivos no nome do diretório anteriores e mostre todos os arquivos
 [print(re.match("(.*?)/",mimetypes.guess_type(i)[0]).group(1)) for i in os.listdir() if '.' in i]
 
-#Using dir windowns for test in my computer
+#Usando windowns dir para teste no meu computador
+
 dir_test = 'D:\HermesAugusto\Documents\files'
 
 #get date of create and date of modification using getmtime
