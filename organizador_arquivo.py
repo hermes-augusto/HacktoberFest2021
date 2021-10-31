@@ -38,9 +38,9 @@ dir_test = 'D:\HermesAugusto\Documents\files'
 
 #Formato da data do arquivoi yyyy-mm
 time.strftime("%Y-%m",time.strptime(time.ctime(os.path.getmtime("new 3.txt"))))
-#Frist get time of file in seconds is return a float
+#O primeiro tempo de obtenção do arquivo em segundos é retornar um flutuante
 x = os.path.getctime("new 3.txt")
-#convert to time in format Fri Oct 29 20:30:15 2021
+#converte a data para Fri Oct 29 20:30:15 2021
 y = time.ctime(x)
 #Convrerto to object time and transform to pattern yyyy-mm
 t_obj = time.strftime("%Y-%m",time.strptime(y))
@@ -52,7 +52,7 @@ for root, dirs, files in os.walk(dir_test):
     print("files: ", files)
     
     [print(re.match("(.*?)/",mimetypes.guess_type(i)[0]).group(1)) for i in files ]
-#How make a copy of file using shutil
+#fazendo a copia shutil
 shutil.copy2('new 3.txt','D:\HermesAugusto\Documents\Projects\personal\study' )
 #How make a move of file using shutil
 shutil.move('new 3.txt','D:\HermesAugusto\Documents\Projects\personal\study')
