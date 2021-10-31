@@ -33,8 +33,7 @@ data = response.json()
 # Load "businesses" values to a data frame and print head
 cafes = pd.DataFrame(data["businesses"])
 print(cafes.head())
-==
-=====================================================================
+#=======================================================================
 # Create data frame of next 500 rows with labeled columns
 
 vt_data_first500 = pd.read_csv("vt_tax_data_2016.csv",
